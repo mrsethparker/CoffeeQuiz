@@ -1,8 +1,10 @@
 package com.example.android.coffeequiz;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -140,6 +142,13 @@ public class MainActivity extends AppCompatActivity {
                 //Hide current question
                 frenchPressTempLayout = (LinearLayout) findViewById(R.id.french_press_temp_layout);
                 frenchPressTempLayout.setVisibility(View.GONE);
+
+                // Hide the keyboard after the editText field is done.
+                View view = this.getCurrentFocus();
+                if (view != null) {
+                    InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                }
 
                 //Make next question visible
                 espressoGrindLayout = (LinearLayout) findViewById(R.id.espresso_grind_layout);
