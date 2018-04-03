@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Coffee Quiz</string>
+    <string name="frenchPressGrindQuestion">What is the proper grind size to use for a French Press brew?</string>
+    <string name="fineGrindOption">Fine</string>
+    <string name="mediumGrindOption">Medium</string>
+    <string name="coarseGrindOption">Coarse</string>
+    <string name="nextText">next</string>
+    <string name="frenchPressTempQuestion">What temperature should be used for a French Press brew?</string>
+    <string name="frenchPressTempHint">Enter temperature in degrees F</string>
+    <string name="espressoGrindQuestion">What is the proper grind size for espresso?</string>
+    <string name="coffeeSpeciesQuestion">What species of coffee bean is most widely used?</string>
+    <string name="arabicaOption">Arabica</string>
+    <string name="robustaOption">Robusta</string>
+    <string name="brewMethodQuestion">Which of the list below is a coffee brewing method?   Select all that apply.</string>
+    <string name="dripMethodOption">Drip</string>
+    <string name="frenchPressMethodOption">French Press</string>
+    <string name="airPotMethodOption">Air Pot</string>
+    <string name="chemexMethodOption">Chemex</string>
+    <string name="mokaPotMethodOption">Moka Pot</string>
+    <string name="checkAnswersButtonText">check answers</string>
 </resources>
