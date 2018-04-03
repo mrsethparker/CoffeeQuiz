@@ -10,10 +10,10 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,13 +24,13 @@ public class MainActivity extends AppCompatActivity {
     public void gradeQuiz(View view) {
 
         String frenchPressGrindUserAnswer = "";
-        String frenchPressGrindCorrectAnswer = "Coarse";
+        String frenchPressGrindCorrectAnswer = getString(R.string.coarseGrindOption);
         String frenchPressTempUserAnswer = "";
-        String frenchPressTempCorrectAnswer = "190";
+        String frenchPressTempCorrectAnswer = getString(R.string.frenchPressTempAnswer);
         String espressoGrindUserAnswer = "";
-        String espressoGrindCorrectAnswer = "Fine";
+        String espressoGrindCorrectAnswer = getString(R.string.fineGrindOption);
         String coffeeSpeciesGrindUserAnswer = "";
-        String coffeeSpeciesGrindCorrectAnswer = "Arabica";
+        String coffeeSpeciesGrindCorrectAnswer = getString(R.string.arabicaOption);
         int score = 0;
 
 
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Display the user's score
         LinearLayout scoreLayout = (LinearLayout) findViewById(R.id.score_layout);
-        String scoreMessage = "Your score is " + score + " out of 5";
+        String scoreMessage = getString(R.string.scoreMessageText, score);
         TextView messageView = (TextView) findViewById(R.id.message);
         messageView.setText(scoreMessage);
         scoreLayout.setVisibility(View.VISIBLE);

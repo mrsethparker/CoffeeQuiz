@@ -1,4 +1,5 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Coffee Quiz</string>
     <string name="frenchPressGrindQuestion">What is the proper grind size to use for a French Press brew?</string>
     <string name="fineGrindOption">Fine</string>
@@ -18,4 +19,6 @@
     <string name="chemexMethodOption">Chemex</string>
     <string name="mokaPotMethodOption">Moka Pot</string>
     <string name="checkAnswersButtonText">check answers</string>
+    <string name="frenchPressTempAnswer">190</string>
+    <string name="scoreMessageText">Your score is <xliff:g id="score" example="1">%d</xliff:g> out of 5</string>
 </resources>
