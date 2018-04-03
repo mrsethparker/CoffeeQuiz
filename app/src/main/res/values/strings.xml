@@ -21,4 +21,18 @@
     <string name="checkAnswersButtonText">check answers</string>
     <string name="frenchPressTempAnswer">190</string>
     <string name="scoreMessageText">Your score is <xliff:g id="score" example="1">%d</xliff:g> out of 5</string>
+    <string name="frenchPressGrindWrongMessage">The correct grind to use with a french press is <xliff:g id="frenchPressGrindAnswer" example="Coarse">%1$s</xliff:g>
+         but you answered <xliff:g id="UserFrenchPressGrindAnswer" example="Coarse">%2$s</xliff:g>.</string>
+    <string name="frenchPressTempWrongMessage">The proper temperature for a french press brew is <xliff:g id="frenchPressTempAnswer" example="Coarse">%1$s</xliff:g>
+         but you answered <xliff:g id="UserFrenchPressTempAnswer" example="Coarse">%2$s</xliff:g>.</string>
+    <string name="espressoGrindWrongMessage">The proper grind for an espresso is <xliff:g id="espressoGrindAnswer" example="Coarse">%1$s</xliff:g>
+         but you answered <xliff:g id="userEspressoGrindAnswer" example="Coarse">%2$s</xliff:g>.</string>
+    <string name="coffeeSpeciesWrongMessage">The most commonly used coffee species is <xliff:g id="coffeeSpeciesAnswer" example="Coarse">%1$s</xliff:g>
+         but you answered <xliff:g id="userCoffeeSpeciesAnswer" example="Coarse">%2$s</xliff:g>.</string>
+    <string name="brewMethodWrongMessage">The correct brew methods are:\nDrip\nFrench Press\nChemex\nMoka Pot\n\nYou answered:\n</string>
+    <string name="userDripAnswer">Drip\n</string>
+    <string name="userFrenchPressAnswer">French Press\n</string>
+    <string name="userAirPotAnswer">Air Pot\n</string>
+    <string name="userChemexAnswer">Chemex\n</string>
+    <string name="userMokaPotAnswer">Moka Pot\n</string>
 </resources>

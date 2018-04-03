@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         String coffeeSpeciesGrindUserAnswer = "";
         String coffeeSpeciesGrindCorrectAnswer = getString(R.string.arabicaOption);
         int score = 0;
-
+        String wrongAnswerMessage = "";
 
         //Get the user answer for the proper french press grind size
         RadioGroup frenchPressGrindGroup = (RadioGroup) findViewById(R.id.french_press_grind_radioGroup);
@@ -44,8 +44,13 @@ public class MainActivity extends AppCompatActivity {
 
             //Compare the user's answer to the correct answer
             //Add to the score if the answer is correct
+            //Create a message with the correct answer if the user answers incorrectly
             if (frenchPressGrindUserAnswer.equals(frenchPressGrindCorrectAnswer)) {
                 score += 1;
+            }
+            else {
+                wrongAnswerMessage = getString(R.string.frenchPressGrindWrongMessage,
+                        frenchPressGrindCorrectAnswer,frenchPressGrindUserAnswer);
             }
 
         }
@@ -56,8 +61,13 @@ public class MainActivity extends AppCompatActivity {
 
         //Compare the user's answer to the correct answer
         //Add to the score if the answer is correct
+        //Create a message with the correct answer if the user answers incorrectly
         if (frenchPressTempUserAnswer.equals(frenchPressTempCorrectAnswer)) {
             score += 1;
+        }
+        else {
+            wrongAnswerMessage += "\n\n" + getString(R.string.frenchPressTempWrongMessage,
+                    frenchPressTempCorrectAnswer, frenchPressTempUserAnswer);
         }
 
         //Get the user answer for the proper espresso grind size
@@ -70,8 +80,13 @@ public class MainActivity extends AppCompatActivity {
 
             //Compare the user's answer to the correct answer
             //Add to the score if the answer is correct
+            //Create a message with the correct answer if the user answers incorrectly
             if (espressoGrindUserAnswer.equals(espressoGrindCorrectAnswer)) {
                 score += 1;
+            }
+            else {
+                wrongAnswerMessage += "\n\n" + getString(R.string.espressoGrindWrongMessage,
+                        espressoGrindCorrectAnswer,espressoGrindUserAnswer);
             }
 
         }
@@ -86,8 +101,13 @@ public class MainActivity extends AppCompatActivity {
 
             //Compare the user's answer to the correct answer
             //Add to the score if the answer is correct
+            //Create a message with the correct answer if the user answers incorrectly
             if (coffeeSpeciesGrindUserAnswer.equals(coffeeSpeciesGrindCorrectAnswer)) {
                 score += 1;
+            }
+            else{
+                wrongAnswerMessage += "\n\n" + getString(R.string.coffeeSpeciesWrongMessage,
+                        coffeeSpeciesGrindCorrectAnswer,coffeeSpeciesGrindUserAnswer);
             }
         }
 
@@ -104,6 +124,29 @@ public class MainActivity extends AppCompatActivity {
                 && chemexCheckBox.isChecked() && mokaPotCheckBox.isChecked()) {
             score += 1;
         }
+        else{
+            wrongAnswerMessage += "\n\n" + getString(R.string.brewMethodWrongMessage);
+
+            if(dripCheckBox.isChecked()){
+                wrongAnswerMessage += getString(R.string.userDripAnswer);
+            }
+
+            if(frenchPressCheckBox.isChecked()){
+                wrongAnswerMessage += getString(R.string.userFrenchPressAnswer);
+            }
+
+            if(airPotCheckBox.isChecked()){
+                wrongAnswerMessage += getString(R.string.userAirPotAnswer);
+            }
+
+            if(chemexCheckBox.isChecked()){
+                wrongAnswerMessage += getString(R.string.userChemexAnswer);
+            }
+
+            if(mokaPotCheckBox.isChecked()){
+                wrongAnswerMessage += getString(R.string.userMokaPotAnswer);
+            }
+        }
 
         //Now that the user has submitted their answers, hide the last question of the quiz
         LinearLayout brewMethodLayout = (LinearLayout) findViewById(R.id.brew_method_layout);
@@ -112,6 +155,13 @@ public class MainActivity extends AppCompatActivity {
         //Display the user's score
         LinearLayout scoreLayout = (LinearLayout) findViewById(R.id.score_layout);
         String scoreMessage = getString(R.string.scoreMessageText, score);
+
+        //If the user didn't get a perfect score, display the missed questions
+        if(score<5){
+            scoreMessage += "\n\n" + wrongAnswerMessage;
+        }
+
+        //Set the quiz score message and make visible
         TextView messageView = (TextView) findViewById(R.id.message);
         messageView.setText(scoreMessage);
         scoreLayout.setVisibility(View.VISIBLE);
