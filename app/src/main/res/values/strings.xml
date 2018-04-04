@@ -1,38 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The name of the app -->
     <string name="app_name">Coffee Quiz</string>
+
+    <!--Question text -->
     <string name="frenchPressGrindQuestion">What is the proper grind size to use for a French Press brew?</string>
+
+    <!--Coffee grind size option -->
     <string name="fineGrindOption">Fine</string>
+
+    <!--Coffee grind size option-->
     <string name="mediumGrindOption">Medium</string>
+
+    <!--Coffee grind size option-->
     <string name="coarseGrindOption">Coarse</string>
+
+    <!--"Next" button text. 30 characters or less -->
     <string name="nextText">next</string>
+
+    <!--Question text -->
     <string name="frenchPressTempQuestion">What temperature should be used for a French Press brew?</string>
+
+    <!--Hint text for temperature input -->
     <string name="frenchPressTempHint">Enter temperature in degrees F</string>
+
+    <!--Question text -->
     <string name="espressoGrindQuestion">What is the proper grind size for espresso?</string>
+
+    <!--Question text -->
     <string name="coffeeSpeciesQuestion">What species of coffee bean is most widely used?</string>
+
+    <!--Coffee species option -->
     <string name="arabicaOption">Arabica</string>
+
+    <!--Coffee species option -->
     <string name="robustaOption">Robusta</string>
+
+    <!--Question text -->
     <string name="brewMethodQuestion">Which of the list below is a coffee brewing method?   Select all that apply.</string>
+
+    <!--Coffee brew method option -->
     <string name="dripMethodOption">Drip</string>
+
+    <!--Coffee brew method option -->
     <string name="frenchPressMethodOption">French Press</string>
+
+    <!--Coffee brew method option -->
     <string name="airPotMethodOption">Air Pot</string>
+
+    <!--Coffee brew method option -->
     <string name="chemexMethodOption">Chemex</string>
+
+    <!--Coffee brew method option -->
     <string name="mokaPotMethodOption">Moka Pot</string>
+
+    <!--Text for the check answers button. 30 characters or less -->
     <string name="checkAnswersButtonText">check answers</string>
+
+    <!--Answer text for french press brewing temperature -->
     <string name="frenchPressTempAnswer">190</string>
+
+    <!--Text for the quiz score message -->
     <string name="scoreMessageText">Your score is <xliff:g id="score" example="1">%d</xliff:g> out of 5</string>
+
+    <!--Text if the french press grind size question is answered incorrectly -->
     <string name="frenchPressGrindWrongMessage">The correct grind to use with a french press is <xliff:g id="frenchPressGrindAnswer" example="Coarse">%1$s</xliff:g>
          but you answered <xliff:g id="UserFrenchPressGrindAnswer" example="Coarse">%2$s</xliff:g>.</string>
+
+    <!--Text if the french press brew temperature question is answered incorrectly -->
     <string name="frenchPressTempWrongMessage">The proper temperature for a french press brew is <xliff:g id="frenchPressTempAnswer" example="Coarse">%1$s</xliff:g>
          but you answered <xliff:g id="UserFrenchPressTempAnswer" example="Coarse">%2$s</xliff:g>.</string>
+
+    <!--Text if the espresso grind size question is answered incorrectly -->
     <string name="espressoGrindWrongMessage">The proper grind for an espresso is <xliff:g id="espressoGrindAnswer" example="Coarse">%1$s</xliff:g>
          but you answered <xliff:g id="userEspressoGrindAnswer" example="Coarse">%2$s</xliff:g>.</string>
+
+    <!--Text if the coffee species question is answered incorrectly -->
     <string name="coffeeSpeciesWrongMessage">The most commonly used coffee species is <xliff:g id="coffeeSpeciesAnswer" example="Coarse">%1$s</xliff:g>
          but you answered <xliff:g id="userCoffeeSpeciesAnswer" example="Coarse">%2$s</xliff:g>.</string>
+
+    <!--Text if the coffee brewing method question is answered incorrectly -->
     <string name="brewMethodWrongMessage">The correct brew methods are:\nDrip\nFrench Press\nChemex\nMoka Pot\n\nYou answered:\n</string>
+
+    <!--Text for a coffee brewing method -->
     <string name="userDripAnswer">Drip\n</string>
+
+    <!--Text for a coffee brewing method -->
     <string name="userFrenchPressAnswer">French Press\n</string>
+
+    <!--Text for a coffee brewing method -->
     <string name="userAirPotAnswer">Air Pot\n</string>
+
+    <!--Text for a coffee brewing method -->
     <string name="userChemexAnswer">Chemex\n</string>
+
+    <!--Text for a coffee brewing method -->
     <string name="userMokaPotAnswer">Moka Pot\n</string>
 </resources>
