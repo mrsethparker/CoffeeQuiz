@@ -29,14 +29,14 @@
             android:id="@+id/french_press_grind_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:text="@string/frenchPressGrindQuestion" />
 
         <RadioGroup
             android:id="@+id/french_press_grind_radioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:orientation="vertical">
 
             <RadioButton
@@ -63,7 +63,7 @@
             android:id="@+id/french_press_grind_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:onClick="nextButtonClick"
             android:text="@string/nextText" />
     </LinearLayout>
@@ -83,14 +83,14 @@
             android:id="@+id/french_press_temp_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:text="@string/frenchPressTempQuestion" />
 
         <EditText
             android:id="@+id/french_press_temp_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:hint="@string/frenchPressTempHint"
             android:inputType="number" />
 
@@ -98,7 +98,7 @@
             android:id="@+id/french_press_temp_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:onClick="nextButtonClick"
             android:text="@string/nextText" />
     </LinearLayout>
@@ -118,14 +118,14 @@
             android:id="@+id/expresso_grind_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:text="@string/espressoGrindQuestion" />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/espresso_grind_radioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:orientation="vertical">
 
             <RadioButton
@@ -152,7 +152,7 @@
             android:id="@+id/espress_grind_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:onClick="nextButtonClick"
             android:text="@string/nextText" />
     </LinearLayout>
@@ -163,7 +163,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/espresso_grind_layout"
         android:layout_centerInParent="true"
-        android:layout_margin="4dp"
+        android:layout_margin="@dimen/standardMargin"
         android:background="@drawable/layout_bg"
         android:gravity="center_horizontal"
         android:orientation="vertical"
@@ -173,14 +173,14 @@
             android:id="@+id/coffee_species_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:text="@string/coffeeSpeciesQuestion" />
 
         <RadioGroup
             android:id="@+id/coffee_species_radioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:orientation="vertical">
 
             <RadioButton
@@ -201,7 +201,7 @@
             android:id="@+id/coffee_species_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:onClick="nextButtonClick"
             android:text="@string/nextText" />
     </LinearLayout>
@@ -221,7 +221,7 @@
             android:id="@+id/_coffee_method_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:text="@string/brewMethodQuestion" />
 
         <LinearLayout
@@ -265,7 +265,7 @@
             android:id="@+id/check_answers_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/standardMargin"
             android:onClick="gradeQuiz"
             android:text="@string/checkAnswersButtonText" />
     </LinearLayout>
@@ -284,6 +284,6 @@
             android:id="@+id/message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"/>
+            android:layout_margin="@dimen/standardMargin"/>
     </LinearLayout>
 </RelativeLayout>
