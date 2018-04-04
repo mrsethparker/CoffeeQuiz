@@ -58,7 +58,7 @@
     <string name="checkAnswersButtonText">check answers</string>
 
     <!--Answer text for french press brewing temperature -->
-    <string name="frenchPressTempAnswer">190</string>
+    <string name="frenchPressTempAnswer">195</string>
 
     <!--Text for the quiz score message -->
     <string name="scoreMessageText">Your score is <xliff:g id="score" example="1">%d</xliff:g> out of 5</string>
