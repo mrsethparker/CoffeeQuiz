@@ -96,4 +96,7 @@
 
     <!--Text for a coffee brewing method -->
     <string name="userMokaPotAnswer">Moka Pot\n</string>
+
+    <!--Content description for layout background image -->
+    <string name="coffeeBeanImageDescription">Image of coffee beans</string>
 </resources>
