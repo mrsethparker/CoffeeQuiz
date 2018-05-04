@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:contentDescription="@string/coffeeBeanImageDescription"
-        android:src="@drawable/coffee_beans" />
+        android:src="@drawable/pexels_photo_531754" />
 
     <LinearLayout
         android:id="@+id/french_press_grind_layout"
