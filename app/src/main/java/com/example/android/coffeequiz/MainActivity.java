@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -165,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
         TextView messageView = (TextView) findViewById(R.id.message);
         messageView.setText(scoreMessage);
         scoreLayout.setVisibility(View.VISIBLE);
+        displayScoreToast(scoreMessage);
 
     }
 
@@ -226,5 +228,13 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
         }
+    }
+
+    public void displayScoreToast(CharSequence toastMessage){
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_LONG;
+
+        Toast toast = Toast.makeText(context, toastMessage, duration);
+        toast.show();
     }
 }
